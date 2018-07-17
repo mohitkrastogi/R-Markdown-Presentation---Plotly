@@ -1,0 +1,14 @@
+---
+title: "R Markdown and Leaflet"
+author: "Mohit Rastogi"
+date: "July 17, 2018"
+output: html_document
+---
+Create a web page using R Markdown that features a map created with Leaflet.
+
+```{r}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>% 
+  addMarkers(lat=44.814875, lng= 20.448346, popup='City of work')
+```
